@@ -1,5 +1,5 @@
 body {
-    background-color: #2b2b2b;
+    background-color: var(--cor-secundaria);
 }
 
 body::before {
@@ -82,7 +82,7 @@ main {
 }
 
 .character-selection .big-character.player-2 .name::before {
-    background-color: greenyellow;
+    background-color: #adff2f;
 }
 
 /* lista */
@@ -91,17 +91,17 @@ main {
     flex-wrap: wrap;
     max-width: 400px;
     justify-content: center;
-    gap: 10px
+    gap: 12px
 }
 
 .character-list .character {
-    /* border: 2px solid #fff; */
-    /* background-color: #2b2b2b; */
+    border: 2px solid #fff;
+    background-color: #2b2b2b;
     width: 30%;
     height: 190px;
     cursor: pointer;
     z-index: 2;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     position: relative;
     transition: 0.15s ease-in-out;
 }
@@ -111,10 +111,11 @@ main {
     height: 80%;
     border: 2px solid #fff;
     border-radius: 5px;
-   
+
 }
 
 .character-list .character.slected {
-   
-    animation: c-glo;
+    border: 2px solid plum;
+    animation: c-glowing-plum .3s ease-in-out infinite;
+    animation-direction: alternate;
 }
