@@ -61,7 +61,7 @@ main {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    font-size: 27px;
+    font-size: 45px;
 
 }
 
@@ -133,7 +133,7 @@ main {
     z-index: 2;
 }
 
-.character-list .characterplayer-2-selected:hover {
+.character-list .character.player-2-selected:hover {
     animation: c-glowing-green .3s ease-in-out infinite;
     animation-direction: alternate;
 
@@ -141,4 +141,31 @@ main {
 
 .character-list .character .tag {
     display: none;
+    font-family: 'MK-4', serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--cor-padrao);
+    transition: opacity 0.3s ease-in-out;
+    animation: alternate;
+
+    /* se quiser colocar animação no texto */
+    /* animation: text-glowing-plum .3s ease-in-out infinite;
+    animation-direction: alternate; */
+}
+
+.character-list .character.selected .tag {
+    display: block;
+
+    /* se quiser colocar animação no texto */
+    /* animation: text-glowing-plum .3s ease-in-out infinite;
+    animation-direction: alternate; */
+}
+
+.character-list .character.player-2-selected .tag {
+    display: block;
+
+    /* se quiser colocar animação no texto */
+    /* animation: text-glowing-green .3s ease-in-out infinite;
+    animation-direction: alternate; */
 }
