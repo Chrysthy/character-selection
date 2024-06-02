@@ -27,7 +27,7 @@ main {
 }
 
 .header .title {
-    color: #fff;
+    color: var(--cor-padrao);
     font-family: 'MK-MYTH', sans-serif;
     font-size: 70px;
     line-height: 102px;
@@ -56,7 +56,7 @@ main {
 }
 
 .character-selection .big-character h2 {
-    color: #fff;
+    color: var(--cor-padrao);
     font-family: 'MK-4', sans-serif;
     position: absolute;
     bottom: 0px;
@@ -78,11 +78,11 @@ main {
 }
 
 .character-selection .big-character.player-1 .name::before {
-    background-color: #dda0dd;
+    background-color: var(--cor-player1-fraca);
 }
 
 .character-selection .big-character.player-2 .name::before {
-    background-color: #adff2f;
+    background-color: var(--cor-player2-principal);
 }
 
 /* lista */
@@ -91,14 +91,13 @@ main {
     flex-wrap: wrap;
     max-width: 400px;
     justify-content: center;
-    gap: 12px
+    gap: 15px
 }
 
 .character-list .character {
-    border: 2px solid #fff;
-    background-color: #2b2b2b;
+    border: 2px solid var(--cor-padrao);
     width: 30%;
-    height: 190px;
+    height: 150px;
     cursor: pointer;
     z-index: 2;
     border-radius: 5px;
@@ -107,15 +106,39 @@ main {
 }
 
 .character-list .character img {
-    width: 90%;
-    height: 80%;
-    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--cor-padrao);
     border-radius: 5px;
 
 }
 
-.character-list .character.slected {
-    border: 2px solid plum;
+/* personagem selecionado com brilho */
+.character-list .character.selected {
+    border: 2px solid var(--cor-player1-fraca);
     animation: c-glowing-plum .3s ease-in-out infinite;
     animation-direction: alternate;
+}
+
+.character-list .character.player-2-selected {
+    border: 2px solid var(--cor-player2-fraca);
+    animation: c-glowing-green .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.character-list .character:hover {
+    animation: c-glowing-plum .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.character-list .characterplayer-2-selected:hover {
+    animation: c-glowing-green .3s ease-in-out infinite;
+    animation-direction: alternate;
+
+}
+
+.character-list .character .tag {
+    display: none;
 }
