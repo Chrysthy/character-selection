@@ -11,3 +11,17 @@
     - alterar a imagem do jogador 1
     - alterar o nome do jogador 1
 */
+
+const characters = document.querySelectorAll('.character')
+
+characters.forEach((character) => {
+    character.addEventListener('click', () => {
+
+        const characterSelected = document.querySelector('.selected')
+
+        characterSelected.classList.remove('selected')
+
+        character.classList.add('selected')
+    })
+
+})
