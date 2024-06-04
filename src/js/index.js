@@ -12,23 +12,25 @@
     - alterar o nome do jogador 1
 */
 
-const characters = document.querySelectorAll('.character')
+const characters = document.querySelectorAll('.character');
 
 characters.forEach((character) => {
     character.addEventListener('click', () => {
         // ou mouseenter
-        const characterSelected = document.querySelector('.selected')
+        const characterSelected = document.querySelector('.selected');
 
-        characterSelected.classList.remove('selected')
+        characterSelected.classList.remove('selected');
 
-        character.classList.add('selected')
+        character.classList.add('selected');
 
 
 
 
         const idSelected = character.attributes.id.value;
 
-        const player-1
+        const playerOne = document.getElementById('player-1');
+
+        playerOne.src = `src/img/${idSelected}.webp`
 
 
 
