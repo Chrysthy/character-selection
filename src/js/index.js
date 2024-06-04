@@ -15,6 +15,13 @@
 const characters = document.querySelectorAll('.character');
 
 characters.forEach((character) => {
+
+    const idSelected = character.attributes.id.value;
+
+    if (idSelected === 'shao-kahn') {
+        return;
+    }
+
     character.addEventListener('click', () => {
         // ou mouseenter
         const characterSelected = document.querySelector('.selected');
@@ -26,14 +33,17 @@ characters.forEach((character) => {
 
 
 
-        const idSelected = character.attributes.id.value;
-
         const playerOne = document.getElementById('player-1');
 
         playerOne.src = `src/img/${idSelected}.webp`
 
 
 
+        const namePlayerOne = document.getElementById('character-name');
+
+        const selectedName = character.getAttribute('data-name');
+
+        namePlayerOne.innerHTML = selectedName;
 
     })
 
