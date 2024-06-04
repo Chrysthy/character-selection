@@ -28,7 +28,7 @@ characters.forEach((character) => {
 
         const idSelected = character.attributes.id.value;
 
-        
+        const player-1
 
 
 
