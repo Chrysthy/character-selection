@@ -12,6 +12,7 @@
     - alterar o nome do jogador 1
 */
 
+
 const characters = document.querySelectorAll('.character');
 
 characters.forEach((character) => {
