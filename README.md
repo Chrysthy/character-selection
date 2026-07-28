@@ -50,6 +50,15 @@
 
 <p>Still in development: adjusting GIFs</p>
 
+
+<br>
+
+## ✨ Features
+
+- 
+
+<br>
+
 ## 💻 Project
 
 
