@@ -1,6 +1,6 @@
-# Character Selection ❔
+<h1 align="center"> Character Selection ❔ </h1> 
 
-### This project was created during the Dev em Dobro event and is based on the game Mortal Kombat.
+<p align="center">This project was created during the Dev em Dobro event and is based on the game Mortal Kombat.</p>
 
 <br>
 
