@@ -39,6 +39,14 @@
 
 <br>
 
+## 🛠 Technologies
+
+* HTML 5
+* CSS 3
+* JavaScript
+* Git e GitHub
+
+<br>
 
 
 <br>
