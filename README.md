@@ -37,7 +37,9 @@
 
 ## 📸 Screenshots
 
-  <img src="src/img/mk-project.png" alt="Tela do Projeto">
+<p align="center">
+  <img src=".github/gif-do-projeto.gif" alt="Tela do Projeto">
+</p>
 
 <br>
 
