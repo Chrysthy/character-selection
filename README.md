@@ -1,6 +1,6 @@
 <h1 align="center"> Character Selection ❔ </h1> 
 
-<p align="center">This project was created during the Dev em Dobro event and is based on the game Mortal Kombat.</p>
+<p align="center">This project was created during the Dev em Dobro event and is inspired by the game Mortal Kombat.</p>
 
 <br>
 
@@ -57,12 +57,26 @@
 
 ## ✨ Features
 
-- 
+- Interactive character selection inspired by fighting game rosters.
+- Dynamic visual highlight for the selected character.
+- Character details panel that updates in real time (name, image, and info).
+- Smooth and responsive hover/click interactions for better user experience.
+- Clean and thematic Mortal Kombat-inspired interface.
+- Built with HTML, CSS, and JavaScript (no frameworks), making it easy to study and customize.
+
 
 <br>
 
 ## 💻 Project
 
+The main goal is to practice front-end fundamentals by building an interactive character selection screen.
+
+The application focuses on:
+
+- Structuring content with HTML,
+- Styling and layout with CSS,
+- Interactivity and DOM manipulation with JavaScript.
+- It is a great beginner-friendly project for understanding how to combine visual design and user interaction in a simple web interface.
 
 <br>
 
